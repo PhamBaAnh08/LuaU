@@ -1,4 +1,5 @@
 local SexyAimbot = nil
+local Mouse = game.Players.LocalPlayer:GetMouse()
 SexyAimbot = hookmetamethod(game, "__index", newcclosure(function(self, Index)
             if self == Mouse and not checkcaller() then
                 if Index == "Hit" or Index == "hit" then
